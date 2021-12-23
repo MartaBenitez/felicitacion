@@ -1,0 +1,251 @@
+body{
+	background-color: black;
+}
+#fondo{
+	width: 1400px;
+	height:  700px;
+	background-image: url("../images/fondo.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+	position: relative;
+}
+#santa{
+	background-image: url("../images/santa.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: fixed;
+	z-index: 7;
+	animation-name: animacion_santa;
+	animation-duration: 12s;
+	animation-delay: 3s;
+	animation-timing-function: easy-in;
+	width: 150px;
+	height: 150px;
+	top: 300px;
+	left: 1400px;
+}
+@keyframes animacion_santa{
+	0%{
+		top: 400px;
+		left: 1400px;
+	}
+	100%{
+		top: 440px;
+		left: -200px;
+	}
+}
+#arbol{
+	position: absolute;
+	left: 300px;
+	top:  150px;
+	z-index: 10;
+}
+#arbol_img{
+	width: 30%;
+}
+#bola1{
+	left: 90px;
+	top: 80px;
+}
+#bola2{
+	left: 70px;
+	top: 190px;
+}
+#bola3{
+	left: 50px;
+	top: 320px;
+}
+#bola4{
+	left: 230px;
+	top: 135px;
+}
+#bola5{
+	left: 240px;
+	top: 240px;
+}
+#bola6{
+	left: 250px;
+	top: 380px;
+}
+@keyframes animacion_bolas1{
+	0%{
+		background-color: #B2B1AC;
+	}
+	50%{
+		background-color: #DFAF3A;
+	}
+	100%{
+		background-color: #B2B1AC;
+	}
+}
+@keyframes animacion_bolas2{
+	0%{
+		background-color: #DFAF3A;
+	}
+	50%{
+		background-color: #B2B1AC;
+	}
+	100%{
+		background-color: #DFAF3A;
+	}
+}
+.bolas1,.bolas2{
+	animation-duration: 2s;
+	animation-delay: 0s;
+	animation-iteration-count: 200;
+	border-radius: 100px;
+	border: 1px solid;
+	border-color: rgba(0,0,0,0);
+	width: 20px;
+	height: 20px;
+	z-index: 20px;
+	position: absolute;
+	animation-fill-mode: forwards;
+}
+.bolas1{
+	animation-name: animacion_bolas1;
+}
+.bolas2{
+	animation-name: animacion_bolas2;
+}
+#estrella{
+	width: 5%;
+	position: absolute;
+	top: -20px;
+	left: 137px;
+}
+.copos{
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	z-index: 15;
+	background-image: url("../images/copo.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	top: 40px;
+}
+#copo1{
+	left: 100px;
+}
+#copo2{
+	left: 250px;
+}
+#copo3{
+	left: 320px;
+}
+#copo4{
+	left: 400px;
+}
+#copo5{
+	left: 480px;
+}
+#copo6{
+	left: 520px;
+}
+#copo7{
+	left: 670px;
+}
+#copo8{
+	left: 710px;
+}
+#copo9{
+	left: 780px;
+}
+#copo10{
+	left: 830px;
+}
+#copo11{
+	left: 890px;
+}
+#copo12{
+	left: 920px;
+}
+#copo13{
+	left: 1030px;
+}
+#copo14{
+	left: 1110px;
+}
+#copo15{
+	left: 1230px;
+}
+
+#copo1, #copo7, #copo12{
+	animation-name: copos_animacion;
+	animation-delay: 0s;
+	animation-duration: 10s;
+	animation-iteration-count: 50;
+}
+#copo3, #copo8, #copo15{
+	animation-name: copos_animacion;
+	animation-delay: 1s;
+	animation-duration: 10s;
+	animation-iteration-count: 50;
+}
+#copo2, #copo6, #copo10{
+	animation-name: copos_animacion;
+	animation-delay: 2s;
+	animation-duration: 10s;
+	animation-iteration-count: 50;
+}
+
+#copo4, #copo11, #copo13{
+	animation-name: copos_animacion;
+	animation-delay: 3s;
+	animation-duration: 10s;
+	animation-iteration-count: 50;
+}
+#copo5, #copo9, #copo14{
+	animation-name: copos_animacion;
+	animation-delay: 4s;
+	animation-duration: 10s;
+	animation-iteration-count: 50;
+}
+@keyframes copos_animacion{
+	0%{
+		top: 40px;
+	}
+	100%{
+		top: 600px;
+	}
+}
+#marco{
+	background-image: url("../images/marco.png");
+	background-repeat: no-repeat;
+	background-size: 1450px 750px;
+	z-index: 20;
+	width: 1450px;
+	height: 750px;
+	position: fixed;
+	top: 0px;
+	left: -15px;
+}
+#texto{
+	text-align: center;
+	font-family: "Dancing Script", Georgia, serif;
+	position: fixed;
+	top: 100px;
+	left: 700px;
+	font-size: 70px;
+	z-index: 20;
+	animation-name: animacion_texto;
+	animation-delay: 5s;
+	animation-duration: 10s;
+	animation-fill-mode: both;
+}
+@keyframes animacion_texto{
+	0%{
+		color: black;
+		text-shadow: 2px 2px black;
+	}
+	100%{
+		color: white;
+		text-shadow: 2px 2px grey;
+	}
+}
+
+
+
+
+
